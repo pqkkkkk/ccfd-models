@@ -1,0 +1,44 @@
+{
+  "model": "TransactionLSTM (PyTorch)",
+  "train_file": "D:\\Thesis\\Implementation\\ml-detection\\dataset\\e-commerce-fraud-detection\\preprocessed-05-09-2026\\no_reduction_no_resampling\\artifacts\\feature_engineered\\train_enriched.parquet",
+  "test_file": "D:\\Thesis\\Implementation\\ml-detection\\dataset\\e-commerce-fraud-detection\\preprocessed-05-09-2026\\no_reduction_no_resampling\\artifacts\\feature_engineered\\test_enriched.parquet",
+  "target_col": "label",
+  "execution_mode": "user_transaction_sequence",
+  "hyperparameters": {
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "fc_dim": 32,
+    "epochs": 15,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.2,
+    "pos_weight": 44.037784456848435,
+    "threshold": 0.5,
+    "device": "cpu"
+  },
+  "feature_count": 38,
+  "metrics": {
+    "roc_auc": 0.9595,
+    "pr_auc": 0.7188,
+    "f1_fraud": 0.39663,
+    "precision_fraud": 0.25933,
+    "recall_fraud": 0.84289,
+    "specificity": 0.94652,
+    "g_mean": 0.8932,
+    "accuracy": 0.94427,
+    "f1_macro": 0.68371,
+    "f1_weighted": 0.95831,
+    "confusion_matrix": {
+      "tn": 83251,
+      "fp": 4704,
+      "fn": 307,
+      "tp": 1647
+    },
+    "train_time_sec": 29.847,
+    "eval_time_sec": 0.328,
+    "latency_per_sample_ms": 0.0036,
+    "test_samples": 89909,
+    "test_fraud_samples": 1954
+  }
+}
