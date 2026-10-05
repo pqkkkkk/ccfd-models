@@ -4,3 +4,4 @@ polars
 joblib
 imblearn
 torch
+torch_geometric
