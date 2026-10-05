@@ -5,3 +5,4 @@ joblib
 imblearn
 torch
 torch_geometric
+matplotlib
